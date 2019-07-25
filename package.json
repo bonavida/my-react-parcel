@@ -5,8 +5,8 @@
   "main": "index.js",
   "scripts": {
     "start": "parcel ./public/index.html --open",
-    "build": "parcel build ./public/index.html --out-dir build",
-    "prebuild": "rimraf dist",
+    "build": "parcel build ./public/index.html --out-dir build --public-url ./",
+    "prebuild": "rimraf build",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [
