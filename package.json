@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "parcel ./public/index.html -d build --open",
+    "start": "parcel ./public/index.html -d build --port 3000 --open",
     "build": "parcel build ./public/index.html -d build --public-url ./",
     "prebuild": "rimraf build",
     "test": "echo \"Error: no test specified\" && exit 1"
