@@ -4,8 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "NODE_ENV=development parcel ./public/index.html -d build --port 3000 --open",
-    "build": "NODE_ENV=production parcel build ./public/index.html -d build --public-url ./",
+    "start": "cross-env NODE_ENV=development parcel ./public/index.html -d build --port 3000 --open",
+    "build": "cross-env NODE_ENV=production parcel build ./public/index.html -d build --public-url /",
     "prebuild": "rimraf build",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -25,6 +25,7 @@
     "babel-plugin-module-resolver": "^3.2.0",
     "babel-preset-env": "^1.7.0",
     "babel-preset-react": "^6.24.1",
+    "cross-env": "^5.2.0",
     "node-sass": "^4.12.0",
     "parcel-bundler": "^1.12.3",
     "postcss-modules": "^1.4.1",
